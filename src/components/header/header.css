@@ -7,6 +7,26 @@
     background-color: var(--body-color);
 }
 
+/* Default (Light Mode) Styles */
+body {
+    background-color: #fff;
+    color: #000;
+}
+
+/* Dark Mode Styles */
+.dark-mode {
+    background-color: #121212;
+    color: #fff;
+}
+
+/* Toggle Button Styling */
+.nav__toggle-mode {
+    cursor: pointer;
+    font-size: 1.5rem;
+    margin-left: 1rem;
+}
+
+
 .nav {
     height: calc(var(--header-height) + 1.5rem);
     display: flex;
@@ -18,6 +38,7 @@
 .nav__logo, .nav__toggle {
     color: var(--title-color);
     font-weight: var(--font-medium);
+    font-size: 2rem;
 }
 
 .nav__list {
@@ -27,9 +48,10 @@
 
 .nav__link {
     display: flex;
+    font-size: 1.25rem;
     flex-direction: column;
     align-items: center;
-    font-size: var(--small-font-size);
+    /* font-size: var(--large-font-size); */
     color: var(--title-color);
     font-weight: var(--font-medium);
     transition: .3s;
@@ -37,6 +59,7 @@
 
 .nav__icon, .nav__close, .nav__toggle {
     display: none;
+    font-size: 2.5rem;
 }
 
 /* ACTIVE LINK */

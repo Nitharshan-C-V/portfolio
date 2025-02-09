@@ -1,8 +1,10 @@
 import React from "react";
-import { SiPytorch, SiTensorflow, SiKeras, SiScikitlearn, SiSpacy, SiOpencv } from "react-icons/si"; // Import ML-specific icons
+import { FaMicrosoft, FaAws, FaFileExcel } from "react-icons/fa"; // For Microsoft Excel and AWS
+import { SiPowerbi, SiTableau, SiGoogleanalytics, SiIbm } from "react-icons/si"; // For Power BI, Tableau, Google Analytics, IBM Cloud
+import { RiFileExcel2Line } from "react-icons/ri";
 import Tilt from "react-parallax-tilt"; // Import Tilt
 
-const MachineLearningTools = () => {
+const CloudTools = () => {
     return (
         <Tilt
             options={{
@@ -12,64 +14,57 @@ const MachineLearningTools = () => {
             }}
             className="skills__content"
         >
-            <h3 className="skills__title">Machine Learning Tools</h3>
+            <h3 className="skills__title">Cloud & Visualization Tools</h3>
             <div className="skills__box">
                 <div className="skills__group">
                     <div className="skills__data">
-                        <SiPytorch />
+                        <RiFileExcel2Line />
                         <div>
-                            <h3 className="skills__name">PyTorch</h3>
+                            <h3 className="skills__name">Microsoft Excel</h3>
                             <span className="skills__level">Intermediate</span>
                         </div>
                     </div>
                     <div className="skills__data">
-                        <SiTensorflow />
+                        <SiPowerbi />
                         <div>
-                            <h3 className="skills__name">TensorFlow</h3>
+                            <h3 className="skills__name">Power BI</h3>
                             <span className="skills__level">Intermediate</span>
                         </div>
                     </div>
                     <div className="skills__data">
-                        <SiKeras />
+                        <SiTableau />
                         <div>
-                            <h3 className="skills__name">Keras</h3>
-                            <span className="skills__level">Basic</span>
+                            <h3 className="skills__name">Tableau</h3>
+                            <span className="skills__level">Intermediate</span>
                         </div>
                     </div>
                 </div>
                 <div className="skills__group">
                     <div className="skills__data">
-                        <SiScikitlearn />
+                        <FaAws />
                         <div>
-                            <h3 className="skills__name">scikit-learn</h3>
+                            <h3 className="skills__name">AWS</h3>
                             <span className="skills__level">Intermediate</span>
                         </div>
                     </div>
                     <div className="skills__data">
-                        <SiSpacy />
+                        <SiGoogleanalytics />
                         <div>
-                            <h3 className="skills__name">Spacy</h3>
+                            <h3 className="skills__name">Google Analytics</h3>
                             <span className="skills__level">Intermediate</span>
                         </div>
                     </div>
                     <div className="skills__data">
-                        <SiOpencv />
+                        <SiIbm />
                         <div>
-                            <h3 className="skills__name">OpenCV</h3>
-                            <span className="skills__level">Intermediate</span>
-                        </div>
-                    </div>
-                    {/* <div className="skills__data">
-                        <SiHuggingface />
-                        <div>
-                            <h3 className="skills__name">Hugging Face</h3>
+                            <h3 className="skills__name">IBM Cloud</h3>
                             <span className="skills__level">Basic</span>
                         </div>
-                    </div> */}
+                    </div>
                 </div>
             </div>
         </Tilt>
     );
 }
 
-export default MachineLearningTools;
+export default CloudTools;

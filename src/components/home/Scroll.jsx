@@ -41,7 +41,7 @@ const Scroll = () => {
                 ></path>
             </svg>
             <span className="home__scroll-name">Scroll Down</span>
-            <HiOutlineArrowSmDown className="home__scroll-arrow"/>
+            <HiOutlineArrowSmDown className="home__scroll-arrow" style={{ fontSize: '2rem' }}/>
         </a>
     </div>
   )

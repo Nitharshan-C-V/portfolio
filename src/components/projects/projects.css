@@ -1,3 +1,8 @@
+/* .projects {
+    height: 100vh;
+   
+} */
+
 .project__filters {
     display: flex;
     justify-content: center;
@@ -13,6 +18,7 @@
     font-weight: var(--font-medium);
     border-radius: 0.5rem;
     text-transform: capitalize;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .project__item:hover {
@@ -20,10 +26,18 @@
     color: var(--container-color);
 }
 
-.project__container {
+/* .project__container {
     grid-template-columns: repeat(2, max-content);
     gap: 3rem;
     justify-content: center;
+} */
+
+.project__container {
+    display: grid;
+    grid-template-columns: repeat(2, 0.4fr); /* Ensure proper distribution */
+    gap: 3rem;
+    justify-content: center;
+    margin-top: 2rem;
 }
 
 .project__card {
@@ -40,7 +54,8 @@
 }
 
 .project__title {
-    font-size: var(--normal-font-size);
+    /* font-size: var(--normal-font-size); */
+    font-size: 1.5rem;
     font-weight: var(--font-medium);
     margin-bottom: var(--mb-0-5);
 }
@@ -62,10 +77,67 @@
     transform: translateX(0.25rem);
 }
 
+.project__tech-stack {
+    margin: 10px 0;
+}
+
+.project__tech {
+    display: inline-block;
+    margin-right: 8px;
+    padding: 5px 10px;
+    background-color: #e0e0e0; /* Light background */
+    border-radius: 5px;
+    font-size: 0.875rem; /* Adjust font size */
+}
+
+/* Modal description */
+.services__modal-description {
+    text-align: left; /* Align text to the left */
+    margin: 0; /* Remove any default margin */
+    padding: 0; /* Ensure there's no extra padding */
+    font-size: 1rem; /* Adjust font size if necessary */
+    line-height: 1.6; /* Ensure proper line height for readability */
+}
+
+/* Additional styling for modal if needed */
+.services__modal-content {
+    padding: 1.5rem;
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: var(--container-color);
+    border-radius: 1rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.services__modal-title {
+    font-size: 1.75rem;
+    font-weight: var(--font-medium);
+    margin-bottom: 1rem;
+}
+
+.services__modal-info {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
 /* ACTIVE PROJECT */
 .active__project {
     background-color: var(--title-color);
     color: var(--container-color);
+}
+
+.project__github-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 1.5rem;
+    color: #333; /* Change to your preferred color */
+    z-index: 10; /* Ensure it appears above other elements */
+    transition: color 0.3s ease;
+}
+
+.project__github-icon:hover {
+    color: #000; /* Darker color on hover */
 }
 
 /* BREAK POINTS */

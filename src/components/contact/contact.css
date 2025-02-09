@@ -33,7 +33,7 @@
 }
 
 .contact__card-title, .contact__card-data {
-    font-size: var(--small-font-size);
+    font-size: 1rem;
 }
 
 .contact__card-title {

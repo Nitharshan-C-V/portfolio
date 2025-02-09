@@ -9,8 +9,8 @@ import { Pagination } from 'swiper';
 const Testimonials = () => {
   return (
     <section className="testimonial container section">
-        <h2 className="section__title">Client Feedback</h2>
-        <span className="section__subtitle">Testimonial</span>
+        <h2 className="section__title">Certifications</h2>
+        <span className="section__subtitle"></span>
         <Swiper className="testimonial__container"
             loop={true}
             grabCursor={true}
@@ -34,7 +34,7 @@ const Testimonials = () => {
                 return (
                     <SwiperSlide className="testimonial__card" key={id}>
                         <img src={image} alt="client" className="testimonial__img" />
-                        <h3 className="tetimonial__name">{title}</h3>
+                        <h1 className="tetimonial__name">{title}</h1>
                         <p className="testimonial__description">{description}</p>
                     </SwiperSlide>
                 )

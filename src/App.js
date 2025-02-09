@@ -10,6 +10,7 @@ import Contact from './components/contact/Contact';
 import Footer from './components/footer/Footer';
 import ScrollUp from './components/scrollup/ScrollUp';
 import Portfolio from './components/projects/Portfolio';
+// import Content from './components/content/content';
 
 const App = () => {
   return (
@@ -19,12 +20,13 @@ const App = () => {
         <Home />
         <About />
         <Skills />
-        <Services />
         <Qualification />
         <Portfolio />
+        <Services />
         <Testimonials />
         <Contact />
       </main>
+      {/* <Content /> */}
       <Footer />
       <ScrollUp />
     </>

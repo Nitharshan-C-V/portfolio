@@ -1,4 +1,15 @@
+/* .home__container {
+    row-gap: 7rem;
+} */
+
+.home {
+    height: 100vh; /* Make the section cover the entire viewport height */
+    display: flex;
+    align-items: center;
+}
+
 .home__container {
+    height: 100%; /* Ensure the container fills the section */
     row-gap: 7rem;
 }
 
@@ -16,7 +27,7 @@
 }
 
 .home__social-icon {
-    font-size: 1.25rem;
+    font-size: 2.0rem;
     color: var(--title-color);
 }
 
@@ -54,12 +65,13 @@
 }
 
 .home__description {
+    font-size: var(--h3-font-size);
     max-width: 400px;
     margin-bottom: var(--mb-3);
 }
 
 .home__img {
-    background: url(../../assets//profileBW.jpeg);
+    background: url(../../assets//nithar.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -70,6 +82,18 @@
     width: 300px;
     height: 300px;
     animation: profile__animate 8s ease-in-out infinite 1s;
+}
+
+.typing {
+    display: inline-block;
+    border-right: 2px solid;
+    animation: blink 0.7s step-end infinite;
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
 }
 
 @keyframes profile__animate {
@@ -102,6 +126,7 @@
 }
 
 .home__scroll-name {
+    font-size: 1.25rem;
     color: var(--title-color);
     font-weight: var(--font-medium);
     margin-right: var(--mb-0-25);
@@ -109,7 +134,7 @@
 }
 
 .home__scroll-arrow {
-    font-size: 1.25rem;
+    font-size: 2.0rem;
     color: var(--title-color);
 }
 

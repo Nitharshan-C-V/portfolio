@@ -9,10 +9,15 @@
     --sat: 0%;
     --title-color: hsl(var(--hue), var(--sat), 20%);
     /* --title-color-dark: hsl(var(--hue), var(--sat), 0%); */
-    --title-color-dark: hsl(75, 46%, 51%);
+    /* --title-color-dark: hsl(75, 46%, 51%); */
+    --title-color-dark: hsl(262, 71%, 59%);
     --text-color: hsl(var(--hue), var(--sat), 46%);
     --body-color: hsl(var(--hue), var(--sat), 98%);
     --container-color: #fff;
+    /* */
+    --background-dark: hsl(0, 0%, 10%);
+    --text-dark: hsl(0, 0%, 90%);
+    --container-dark: hsl(0, 0%, 20%);
     /* STATIC TYPOGRAPHY */
     --body-font: "Nunito", sans-serif;
     --big-font-size: 3.5rem;
@@ -152,6 +157,28 @@ img {
     align-items: center;
 }
 
+/* DARK MODE */
+.dark-mode {
+    --body-color: var(--background-dark);
+    --text-color: var(--text-dark);
+    --title-color: var(--text-dark);
+    --container-color: #333; /* Adjust as needed */
+}
+
+.dark-mode h1, .dark-mode h2 {
+    color: var(--text-dark);
+}
+
+.dark-mode .button {
+    background-color: var(--text-dark);
+    color: var(--container-color);
+}
+
+.dark-mode .button:hover {
+    background-color: var(--title-color-dark);
+    /* background-color: var(--text-light); */
+}
+
 /* BREAK POINTS */
 @media screen and (max-width: 992px) {
     .container {
@@ -195,4 +222,9 @@ img {
         margin-right: var(--mb-1);
     }
 
+}
+
+
+* {
+    transition: background-color 0.2s ease, color 0.2s ease;
 }

@@ -1,3 +1,15 @@
+/* .about {
+    height: 100vh;
+} */
+
+.section__title {
+    font-size: 3rem; 
+}
+
+.section__subtitle {
+    font-size: 1.5rem; 
+}
+
 .about__container {
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
@@ -11,9 +23,13 @@
 }
 
 .about__info {
-    grid-template-columns: repeat(3, 140px);
+    /* grid-template-columns: repeat(3, 140px);
     gap: 0.5rem;
+    margin-bottom: var(--mb-2); */
+    grid-template-columns: repeat(2, 1fr); /* Change from repeat(3, 140px) */
+    gap: 1rem; /* Increase the gap if needed */
     margin-bottom: var(--mb-2);
+
 }
 
 .about__box {
@@ -22,24 +38,29 @@
     border-radius: 0.75rem;
     text-align: center;
     padding: 1rem 1.25rem;
+    width: 100%; 
+    max-width: 200px;
 }
 
 .about__icon {
-    font-size: 1.5rem;
+    font-size: 2.5rem;
     color: var(--title-color);
     margin-bottom: var(--mb-0-5);
 }
 
 .about__title {
-    font-size: var(--small-font-size);
+    /* font-size: var(--small-font-size); */
+    font-size: 1.25rem;
     font-weight: var(--font-medium);
 }
 
 .about__subtitle {
-    font-size: var(--smaller-font-size);
+    /* font-size: var(--smaller-font-size); */
+    font-size: 1.0rem;
 }
 
 .about__description {
+    font-size: 1.5rem;
     padding: 0 4rem 0 0;
     margin-bottom: var(--mb-2-5);
 }

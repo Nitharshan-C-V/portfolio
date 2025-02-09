@@ -1,6 +1,6 @@
-import React, {useState} from "react";
+import React, { useState, useEffect } from "react";
 import './header.css';
-import { HiOutlineHome, HiOutlineUser, HiOutlineBadgeCheck, HiOutlineClipboardList, HiOutlinePhotograph, HiOutlineMail, HiX, HiOutlineMenu } from "react-icons/hi";
+import { HiOutlineHome, HiOutlineUser, HiOutlineBadgeCheck, HiOutlineClipboardList, HiOutlinePhotograph, HiOutlineMail, HiX, HiOutlineMenu, HiOutlineSun, HiOutlineMoon } from "react-icons/hi";
 
 
 const Header = () => {
@@ -10,21 +10,36 @@ const Header = () => {
         else header.classList.remove("scroll-header");
     });
    
-    const[Toggle, showMenu] = useState(false);
-    const[activeNav, setActiveNav] = useState("#home");
+    // const[Toggle, showMenu] = useState(false);
+    // const[activeNav, setActiveNav] = useState("#home");
+    const [isDarkMode, setIsDarkMode] = useState(false);
+    const [Toggle, showMenu] = useState(false);
+    const [activeNav, setActiveNav] = useState("#home");
+
+    const toggleDarkMode = () => {
+        setIsDarkMode(!isDarkMode);
+    };
+
+    useEffect(() => {
+        if (isDarkMode) {
+            document.body.classList.add("dark-mode");
+        } else {
+            document.body.classList.remove("dark-mode");
+        }
+    }, [isDarkMode]);
 
     return(
         <header className="header">
             <nav className="nav container">
-                <a href="index.html" className="nav__logo">Portfolio</a>
+                <a href="index.html" className="nav__logo">CV Nitharshan</a>
                 <div className={Toggle ? "nav__menu show-menu" : "nav__menu"}>
                     <ul className="nav__list grid">
-                        <li className="nav__item">
+                        {/* <li className="nav__item">
                             <a href="#home" onClick={() => setActiveNav("#home")} 
                             className={activeNav === "#home" ? "nav__link active-link" : "nav__link"}>
                                 <HiOutlineHome className="nav__icon"/>Home
                             </a>
-                        </li>
+                        </li> */}
                         <li className="nav__item">
                             <a href="#about" onClick={() => setActiveNav("#about")} 
                             className={activeNav === "#about" ? "nav__link active-link" : "nav__link"}>
@@ -37,18 +52,28 @@ const Header = () => {
                                 <HiOutlineBadgeCheck className="nav__icon"/>Skills
                             </a>
                         </li>
+
                         <li className="nav__item">
-                            <a href="#services" onClick={() => setActiveNav("#services")} 
-                            className={activeNav === "#services" ? "nav__link active-link" : "nav__link"}>
-                                <HiOutlineClipboardList className="nav__icon"/>Services
+                            <a href="#qualification" onClick={() => setActiveNav("#qualification")} 
+                            className={activeNav === "#qualification" ? "nav__link active-link" : "nav__link"}>
+                                <HiOutlinePhotograph className="nav__icon"/>Experience
                             </a>
                         </li>
+
                         <li className="nav__item">
                             <a href="#portfolio" onClick={() => setActiveNav("#portfolio")} 
                             className={activeNav === "#portfolio" ? "nav__link active-link" : "nav__link"}>
                                 <HiOutlinePhotograph className="nav__icon"/>Projects
                             </a>
                         </li>
+
+                        <li className="nav__item">
+                            <a href="#services" onClick={() => setActiveNav("#services")} 
+                            className={activeNav === "#services" ? "nav__link active-link" : "nav__link"}>
+                                <HiOutlineClipboardList className="nav__icon"/>Education
+                            </a>
+                        </li>
+                        
                         <li className="nav__item">
                             <a href="#contact" onClick={() => setActiveNav("#contact")} 
                             className={activeNav === "#contact" ? "nav__link active-link" : "nav__link"}>
@@ -58,6 +83,12 @@ const Header = () => {
                     </ul>
                     <HiX className="nav__close" onClick={() => showMenu(!Toggle)} />
                 </div>
+
+                {/* Dark Mode Toggle Button */}
+                <div className="nav__toggle-mode" onClick={toggleDarkMode}>
+                    {isDarkMode ? <HiOutlineSun /> : <HiOutlineMoon />}
+                </div>
+
                 <div className="nav__toggle" onClick={() => showMenu(!Toggle)}>
                     <HiOutlineMenu />
                 </div>

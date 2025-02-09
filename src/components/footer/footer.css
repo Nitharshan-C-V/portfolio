@@ -9,10 +9,12 @@
 
 .footer__title, .footer__link {
     color: var(--title-color);
+    font-size: 1.4rem;
 }
 
 .footer__title {
     text-align: center;
+    /* font-size: var(--normal-font-size); */
     margin-bottom: var(--mb-2);
 }
 
