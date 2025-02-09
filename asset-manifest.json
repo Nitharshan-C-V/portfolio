@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/Nitharshan-C-V.github.io/static/css/main.f9ea7ea2.css",
+    "main.js": "/Nitharshan-C-V.github.io/static/js/main.41c235c0.js",
+    "static/media/nithar.jpg": "/Nitharshan-C-V.github.io/static/media/nithar.adf19e4c0619cd5f1cca.jpg",
+    "static/media/project2.webp": "/Nitharshan-C-V.github.io/static/media/project2.fc906070e9796abe3650.webp",
+    "static/media/project3.webp": "/Nitharshan-C-V.github.io/static/media/project3.b094b696f75369270c95.webp",
+    "static/media/project1.webp": "/Nitharshan-C-V.github.io/static/media/project1.f2c54a35bc5d07af37ea.webp",
+    "static/media/woman1.png": "/Nitharshan-C-V.github.io/static/media/woman1.bf207e1501b3e3a89339.png",
+    "static/media/woman2.png": "/Nitharshan-C-V.github.io/static/media/woman2.1badb7321889e9b9ceaf.png",
+    "static/media/man.png": "/Nitharshan-C-V.github.io/static/media/man.58008a565ab6f0db4d93.png",
+    "static/media/Example-Cv.pdf": "/Nitharshan-C-V.github.io/static/media/Example-Cv.e83747cf513e0b21a7f1.pdf",
+    "index.html": "/Nitharshan-C-V.github.io/index.html",
+    "main.f9ea7ea2.css.map": "/Nitharshan-C-V.github.io/static/css/main.f9ea7ea2.css.map",
+    "main.41c235c0.js.map": "/Nitharshan-C-V.github.io/static/js/main.41c235c0.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f9ea7ea2.css",
+    "static/js/main.41c235c0.js"
+  ]
+}
