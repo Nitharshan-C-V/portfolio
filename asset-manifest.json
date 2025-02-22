@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.77c37994.css",
+    "main.js": "/portfolio/static/js/main.57dc34df.js",
+    "static/media/USROAD.png": "/portfolio/static/media/USROAD.ad6129ec0a0c2e1d84e0.png",
+    "static/media/Student.png": "/portfolio/static/media/Student.eb4f649ac213578a3439.png",
+    "static/media/Aero.png": "/portfolio/static/media/Aero.dd9df5dc80a99d4f4db3.png",
+    "static/media/Multilung.png": "/portfolio/static/media/Multilung.6c808f19381f0667b6bb.png",
+    "static/media/ATP.png": "/portfolio/static/media/ATP.c9bb0b86cc17d15a87f6.png",
+    "static/media/TelecomChurn.png": "/portfolio/static/media/TelecomChurn.a63d132ebf0e44746889.png",
+    "static/media/SmartLender.png": "/portfolio/static/media/SmartLender.74eeca42db2422e56102.png",
+    "static/media/Steel.png": "/portfolio/static/media/Steel.f32a18559926d10fa8ec.png",
+    "static/media/nithar.jpg": "/portfolio/static/media/nithar.adf19e4c0619cd5f1cca.jpg",
+    "static/media/MultiPDFChatbot.png": "/portfolio/static/media/MultiPDFChatbot.aa174aed4d82c359d5ef.png",
+    "static/media/NEWS.png": "/portfolio/static/media/NEWS.771620fd979d14de2d8e.png",
+    "static/media/P1.png": "/portfolio/static/media/P1.a8f77c6730f3db9e98d3.png",
+    "static/media/project3.webp": "/portfolio/static/media/project3.b094b696f75369270c95.webp",
+    "index.html": "/portfolio/index.html",
+    "main.77c37994.css.map": "/portfolio/static/css/main.77c37994.css.map",
+    "main.57dc34df.js.map": "/portfolio/static/js/main.57dc34df.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.77c37994.css",
+    "static/js/main.57dc34df.js"
+  ]
+}
