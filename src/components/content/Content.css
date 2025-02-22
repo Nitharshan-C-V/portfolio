@@ -1,0 +1,17 @@
+.nav {
+    display: flex;
+    justify-content: center; /* Center the nav items */
+    padding: 10px; /* Add some padding */
+    background: rgba(0, 0, 0, 0.3); /* Match your header background */
+    border-radius: 5px; /* Slight rounding */
+}
+
+.nav a {
+    margin: 0 10px; /* Space out the links */
+    color: #fff; /* Text color */
+    text-decoration: none; /* Remove underline */
+}
+
+.nav a.active {
+    color: #ff0; /* Highlight active link */
+}

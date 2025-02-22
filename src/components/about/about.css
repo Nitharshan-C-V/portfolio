@@ -1,0 +1,91 @@
+/* .about {
+    height: 100vh;
+} */
+
+.section__title {
+    font-size: 3rem; 
+}
+
+.section__subtitle {
+    font-size: 1.5rem; 
+}
+
+.about__container {
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    column-gap: 4rem;
+}
+
+.about__img {
+    width: 350px;
+    border-radius: 1.5rem;
+    justify-self: center;
+}
+
+.about__info {
+    /* grid-template-columns: repeat(3, 140px);
+    gap: 0.5rem;
+    margin-bottom: var(--mb-2); */
+    grid-template-columns: repeat(2, 1fr); /* Change from repeat(3, 140px) */
+    gap: 1rem; /* Increase the gap if needed */
+    margin-bottom: var(--mb-2);
+
+}
+
+.about__box {
+    background-color: #3d342f;
+    border: 1px solid rgba(0, 0, 0, 12);
+    border-radius: 0.75rem;
+    text-align: center;
+    padding: 1rem 1.25rem;
+    width: 100%; 
+    max-width: 200px;
+}
+
+.about__icon {
+    font-size: 2.5rem;
+    color: #ececee;
+    margin-bottom: var(--mb-0-5);
+}
+
+.about__title {
+    /* font-size: var(--small-font-size); */
+    font-size: 1.25rem;
+    font-weight: var(--font-medium);
+    color: #ececee
+}
+
+.about__subtitle {
+    /* font-size: var(--smaller-font-size); */
+    font-size: 1.0rem;
+    color: #ececee
+}
+
+.about__description {
+    font-size: 1.25rem; /* Reduced font size */
+    padding: 0 2rem 0 0; /* Reduced padding for a smaller width */
+    margin-bottom: var(--mb-2-5);
+}
+
+/* BREAK POINTS */
+@media screen and (max-width: 992px) {
+    .about__description {
+        font-size: 1.2rem; /* Slightly reduced font size for tablets */
+        padding: 0 3rem; /* Adjust padding for better responsiveness */
+        margin-bottom: 2rem;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .about__description {
+        font-size: 1rem; /* Further reduced font size for smaller screens */
+        padding: 0 2rem; /* Adjust padding for smaller screens */
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .about__description {
+        font-size: 0.9rem; /* Reduced font size for very small screens */
+        padding: 0 1rem; /* Adjust padding further */
+    }
+}
